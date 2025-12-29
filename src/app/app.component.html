@@ -1,0 +1,533 @@
+<h1 class="bg-primary p-3 text-white text-center">
+  {{title}}
+</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+  
+
+<h4 class="bg-secondary p-2 text-center">langs</h4>
+<ul class="list-group">
+  <li
+  *ngFor="let l of langs"
+   class="list-group-item">
+{{l}}
+   </li>
+   </ul>
+   <br>
+
+
+<h4 class="bg-warning p-2 text-center">items</h4>
+<ul class="list-group">
+  <li
+  *ngFor="let i of items "
+   class="list-group-item">
+{{i}}
+   </li>
+   </ul>
+   <br>
+ 
+<h4 class="bg-info p-2 text-center">hobbies  </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let h of hobbies"
+   class="list-group-item ">
+{{h}}
+   </li>
+   </ul>
+   <br>
+
+<h4 class="bg-danger p-2 text-center">languages   </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let l of languages"
+   class="list-group-item ">
+{{l}}
+   </li>
+   </ul>
+   <br>
+ 
+<h4 class="bg-info p-2 text-center">hobbies  </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let h of hobbies"
+   class="list-group-item ">
+{{h}}
+   </li>
+   </ul>
+   <br>
+
+<h4 class="bg-success p-2 text-center"> fruits </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let f of  fruits"
+   class="list-group-item ">
+{{f}}
+   </li>
+   </ul>
+   <br>
+   
+<h4 class="bg-danger p-2 text-center">languages   </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let l of languages"
+   class="list-group-item ">
+{{l}}
+   </li>
+   </ul>
+   <br>
+   
+<h4 class="bg-primary p-2 text-center">languages   </h4>
+<ul class="list-group">
+  <li
+  *ngFor="let l of languages   "
+   class="list-group-item ">
+{{l}}
+   </li>
+   </ul>
+   <br>
+
+<br>
+<h2 class="text-center bg-warning">Apps Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>appName</th>
+    <th>categoryType</th>
+    <th> downloadsMillion</th>
+    <th> developerCompany</th>
+     <th>subscriptionRequired</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let app of appArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{app.appName}}</td>
+       <td>{{app.categoryType}}</td>
+      <td>{{app.downloadsMillion}}</td>
+      <td>{{app. developerCompany}}</td>
+      <td>{{app.subscriptionRequired}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+    <br>
+    
+<br>
+<h2 class="text-center bg-info">planets Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>planetName</th>
+    <th>distanceFromSunKm</th>
+    <th> diameterKm</th>
+    <th> hasRings</th>
+     <th>numberOfMoons</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let pla of plaArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{pla.planetName}}</td>
+       <td>{{pla.distanceFromSunKm}}</td>
+      <td>{{pla.diameterKm}}</td>
+      <td>{{pla. hasRings}}</td>
+      <td>{{pla.numberOfMoons}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+       
+<br>
+<h2 class="text-center bg-danger">Universities Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>uniName</th>
+    <th>foundedYear</th>
+    <th> countryLocated</th>
+    <th> studentCount</th>
+     <th>worldRanking</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let uni of univArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{uni.uniName}}</td>
+       <td>{{uni.foundedYear}}</td>
+      <td>{{uni.countryLocated}}</td>
+      <td>{{uni. studentCount}}</td>
+      <td>{{uni.worldRanking}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+         
+<br>
+<h2 class="text-center bg-secondary">Animals Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>species</th>
+    <th>averageWeightKg</th>
+    <th> habitatType</th>
+    <th> lifespanYears</th>
+     <th>endangeredStatus</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let ani of  aniArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{ani.species}}</td>
+       <td>{{ani.averageWeightKg}}</td>
+      <td>{{ani.habitatType}}</td>
+      <td>{{ani. lifespanYears}}</td>
+      <td>{{ani.endangeredStatus}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+            
+<br>
+<h2 class="text-center bg-warning"> Continents Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>continentLabel</th>
+    <th>surfaceAreaMillionSqKm</th>
+    <th> countriesCount</th>
+    <th> populationBillion</th>
+     <th>largestCountry</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let cont of contArr; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{cont.continentLabel}}</td>
+       <td>{{cont.surfaceAreaMillionSqKm}}</td>
+      <td>{{cont.countriesCount}}</td>
+      <td>{{cont. populationBillion}}</td>
+      <td>{{cont.largestCountry}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+                
+<br>
+<h2 class="text-center bg-primary"> Desserts Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>dessertName</th>
+    <th>sugarContentGrams</th>
+    <th> servingTemp</th>
+    <th> mainIngredient</th>
+     <th>calorieCount</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let dess of dessArr; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{dess.dessertName}}</td>
+       <td>{{dess.sugarContentGrams}}</td>
+      <td>{{dess.servingTemp}}</td>
+      <td>{{dess. mainIngredient}}</td>
+      <td>{{dess.calorieCount}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+        
+<br>
+<h2 class="text-center bg-secondary">Animals Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>species</th>
+    <th>averageWeightKg</th>
+    <th> habitatType</th>
+    <th> lifespanYears</th>
+     <th>endangeredStatus</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let ani of  aniArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{ani.species}}</td>
+       <td>{{ani.averageWeightKg}}</td>
+      <td>{{ani.habitatType}}</td>
+      <td>{{ani. lifespanYears}}</td>
+      <td>{{ani.endangeredStatus}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+            
+                
+<br>
+<h2 class="text-center bg-dark">Oceans Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>oceanTitle</th>
+    <th> avgDepthMeters</th>
+    <th> surfaceAreaMillionSqKm</th>
+    <th> borderingContinents</th>
+     <th>salinityPpt</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let ocea of oceaArr; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{ocea.oceanTitle}}</td>
+       <td>{{ocea.avgDepthMeters}}</td>
+      <td>{{ocea.surfaceAreaMillionSqKm}}</td>
+      <td>{{ocea. borderingContinents}}</td>
+      <td>{{ocea.salinityPpt}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+
+      
+<br>
+<h2 class="text-center bg-success">Gadgets Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>gadgetLabel </th>
+    <th>featuresCount</th>
+    <th> batteryLifeHours</th>
+    <th> connectivityType</th>
+     <th>weightGrams</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let gad of gadArr; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{gad.gadgetLabel}}</td>
+       <td>{{gad.featuresCount}}</td>
+      <td>{{gad.batteryLifeHours}}</td>
+      <td>{{gad. connectivityType}}</td>
+      <td>{{gad.weightGrams}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+
+       
+<br>
+<h2 class="text-center bg-danger">Gadgets Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>landmarkLabel </th>
+    <th>heightMeters</th>
+    <th> visitorCountYearMillion</th>
+    <th> countryLocation</th>
+     <th>constructionYear</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let land of landArr ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{land.landmarkLabel}}</td>
+       <td>{{land.heightMeters}}</td>
+      <td>{{land.visitorCountYearMillion}}</td>
+      <td>{{land. countryLocation}}</td>
+      <td>{{land.constructionYear}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
+
+           
+<br>
+<h2 class="text-center bg-danger">vehiclesModels Table</h2>
+<table class="col-12"border="1" cellPadding="10" >
+<thead>
+  <tr>
+    <th>Sr No</th>
+    <th>vehicleType </th>
+    <th>maxSpeedKph</th>
+    <th> fuelCapacityLiters</th>
+    <th> wheelCount</th>
+     <th>manufacturerLocation</th>
+      <th>edit</th>
+      <th>Remove</th>
+  </tr>
+</thead>
+  <tbody>
+
+      <tr *ngFor="let vehi of vehiArr  ; let i = index">
+ 
+        <td>{{i + 1}}</td>
+        <td>{{vehi.vehicleType}}</td>
+       <td>{{vehi.maxSpeedKph}}</td>
+      <td>{{vehi.fuelCapacityLiters}}</td>
+      <td>{{vehi. wheelCount}}</td>
+      <td>{{vehi.manufacturerLocation}}</td>
+        <td>
+      
+         <button mat-mini-fab color="primary" >
+          <mat-icon>edit_square</mat-icon>
+        </button>
+        </td>
+        <td>
+             <button mat-mini-fab color="warn">
+              <mat-icon>delete</mat-icon>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+    </table>  
